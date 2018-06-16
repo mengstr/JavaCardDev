@@ -14,7 +14,12 @@ At "Software selection" uncheck "Debian desktop environment" and "print server",
 
 After the installer rebooted the system login as root
 
+### Install required packages
+
+```
 apt-get -y install zip dkms build-essential linux-headers-686
+```
+### Install guest aditions for the VirtualBox VM [optional]
 
 Under the Devices-entry in the VirtualBox menu select the "Insert Guest Additions CD image"
 
@@ -23,6 +28,8 @@ cd /media/cdrom
 ./VBoxLinuxAdditions.run
 ln -s /media/sf_JavaCard ~/JavaCard
 ```
+
+# Change the font on the console [optional]
 
 ```
 dpkg-reconfigure console-setup
